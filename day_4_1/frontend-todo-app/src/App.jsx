@@ -52,18 +52,18 @@ function App() {
   //   console.log(newArray[i]);
   // }
 
-  // doubleArray(array);
-  // var todos = [{
-  //     title: "go to the gym",
-  //     desc : "GYM",
-  //     id : 1
-  //   },
-  //   {
-  //     title: "study hard",
-  //     desc : "STUDY",
-  //     id : 2
-  //   }
-  // ]
+  doubleArray(array);
+  var todos = [{
+      title: "go to the gym",
+      desc : "GYM",
+      id : 1
+    },
+    {
+      title: "study hard",
+      desc : "STUDY",
+      id : 2
+    }
+  ]
 
 //   setInterval(() =>{
 //     setTodo({
