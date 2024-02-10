@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, React} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
 
 function App() {
   const[todo, setTodo] = useState(
@@ -16,7 +17,12 @@ function App() {
       id : 2
     }
   );
- 
+  
+  const [a, setA] = useState(Math.random())
+  const nonState = Math.random();
+  console.log(todo);
+  console.log(nonState);
+  console.log("render")
   // let array = [{
   //   name : "rohan",
   //   age : 24
