@@ -1,10 +1,14 @@
-import { useState, React} from 'react'
+import { useState, React, useEffect} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function useTods(){
+  return [];
+}
 
 function App() {
+  const todosss = useTods();
   const[todo, setTodo] = useState(
     {
       title: "go to the gym",
@@ -20,9 +24,30 @@ function App() {
   
   const [a, setA] = useState(Math.random())
   const nonState = Math.random();
-  console.log(todo);
-  console.log(nonState);
+  // console.log(a);
+  // console.log(todo);
+  // console.log(nonState);
+  // console.log("render")
+
   console.log("render")
+  useEffect(() => {
+    console.log("hi from useEffect");
+  }, []);
+
+  setInterval(() => {
+    setTodo({
+          title : "go eat something",
+           desc : "eat food",
+           id : 1
+    })
+  }, 1000)
+  // setInterval(() => {
+  //   setTodo({
+  //          title : "go eat something",
+  //            desc : "eat food",
+  //            id : 1
+  //   }
+  // , 100000 )});
   // let array = [{
   //   name : "rohan",
   //   age : 24
@@ -58,18 +83,18 @@ function App() {
   //   console.log(newArray[i]);
   // }
 
-  doubleArray(array);
-  var todos = [{
-      title: "go to the gym",
-      desc : "GYM",
-      id : 1
-    },
-    {
-      title: "study hard",
-      desc : "STUDY",
-      id : 2
-    }
-  ]
+  //doubleArray(array);
+  // var todos = [{
+  //     title: "go to the gym",
+  //     desc : "GYM",
+  //     id : 1
+  //   },
+  //   {
+  //     title: "study hard",
+  //     desc : "STUDY",
+  //     id : 2
+  //   }
+  // ]
 
 //   setInterval(() =>{
 //     setTodo({
