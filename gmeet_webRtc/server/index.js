@@ -34,6 +34,8 @@ io.on('connection', (socket) => {
       }
     }
     rooms[roomId].users.push(socket.id);
+    console.log("params : "+JSON.stringify(params,null,2));
+    console.log("rooms : "+JSON.stringify(rooms,null,2));
     console.log("user added to room " + roomId);
   });
 
