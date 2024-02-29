@@ -1,11 +1,53 @@
 "use strict";
-function greet(person) {
-    return "Hi mr " + person.name + " age : " + person.age;
+var Arithmetic;
+(function (Arithmetic) {
+    Arithmetic[Arithmetic["Add"] = 0] = "Add";
+    Arithmetic[Arithmetic["Sub"] = 1] = "Sub";
+    Arithmetic[Arithmetic["Div"] = 2] = "Div";
+    Arithmetic[Arithmetic["Mul"] = 3] = "Mul";
+})(Arithmetic || (Arithmetic = {}));
+function calculate(a, b, type) {
+    console.log(type);
 }
-console.log(greet({
-    name: "rohan",
-    age: 24
-}));
+const ans = calculate(1, 2, Arithmetic.Div);
+// interface Circle{
+//     radius : number;
+// }
+// interface Square{
+//     side : number;
+// }
+// interface Rectangle{
+//     width : number;
+//     height : number;
+// }
+// type Shape = Rectangle | Circle | Square;
+// function renderShape(shape : Shape){
+//     console.log("Rendered!! ")
+// }
+// function calculateArea(shape : Shape){
+//     console.log("Rendered!! ")
+// } 
+// interface PersonGenderProperties{
+//     gender : string;
+//     orientation : string;
+//     pronous : string;
+// }
+// interface PersonInterface{
+//     name : string;
+//     age : number;
+//     genderProps: PersonGenderProperties;
+// }
+// type Person = {
+//     name : string;
+//     age : number;
+// }
+// function greet(person : Person){
+//     return "Hi mr "+person.name+" age : "+person.age;
+// }
+// console.log(greet({
+//     name : "rohan",
+//     age : 24
+// }))
 // console.log(greet({
 //     name:'rohan',
 //     age: 24,
