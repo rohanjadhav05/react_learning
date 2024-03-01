@@ -10,23 +10,12 @@ function calculate(a, b, type) {
     console.log(type);
 }
 const ans = calculate(1, 2, Arithmetic.Div);
-// interface Circle{
-//     radius : number;
-// }
-// interface Square{
-//     side : number;
-// }
-// interface Rectangle{
-//     width : number;
-//     height : number;
-// }
-// type Shape = Rectangle | Circle | Square;
-// function renderShape(shape : Shape){
-//     console.log("Rendered!! ")
-// }
-// function calculateArea(shape : Shape){
-//     console.log("Rendered!! ")
-// } 
+function renderShape(shape) {
+    console.log("Rendered!! ");
+}
+function calculateArea(shape) {
+    console.log("Rendered!! ");
+}
 // interface PersonGenderProperties{
 //     gender : string;
 //     orientation : string;

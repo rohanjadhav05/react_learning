@@ -11,28 +11,28 @@ function calculate(a: number, b : number, type : Arithmetic){
 const ans = calculate(1,2,Arithmetic.Div)
 
 
-// interface Circle{
-//     radius : number;
-// }
+interface Circle{
+    radius : number;
+}
 
-// interface Square{
-//     side : number;
-// }
+interface Square{
+    side : number;
+}
 
-// interface Rectangle{
-//     width : number;
-//     height : number;
-// }
+interface Rectangle{
+    width : number;
+    height : number;
+}
 
-// type Shape = Rectangle | Circle | Square;
+type Shape = Rectangle | Circle | Square;
  
-// function renderShape(shape : Shape){
-//     console.log("Rendered!! ")
-// }
+function renderShape(shape : Shape){
+    console.log("Rendered!! ")
+}
 
-// function calculateArea(shape : Shape){
-//     console.log("Rendered!! ")
-// } 
+function calculateArea(shape : Shape){
+    console.log("Rendered!! ")
+} 
 
 
 // interface PersonGenderProperties{
@@ -40,6 +40,7 @@ const ans = calculate(1,2,Arithmetic.Div)
 //     orientation : string;
 //     pronous : string;
 // }
+
 // interface PersonInterface{
 //     name : string;
 //     age : number;
@@ -55,11 +56,12 @@ const ans = calculate(1,2,Arithmetic.Div)
 // function greet(person : Person){
 //     return "Hi mr "+person.name+" age : "+person.age;
 // }
- 
+
 // console.log(greet({
 //     name : "rohan",
 //     age : 24
 // }))
+
 // console.log(greet({
 //     name:'rohan',
 //     age: 24,
