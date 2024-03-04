@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2016",    // ECMA script version          
+    "module": "commonjs",   // specifies what module TS is written                           
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                      
+    "skipLibCheck": true                                 
+  }
+}
