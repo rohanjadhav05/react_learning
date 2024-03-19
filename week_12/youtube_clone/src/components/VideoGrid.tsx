@@ -1,41 +1,50 @@
 import { VideoCard } from "./VideoCard"
 
-const VIDEOS = [{
+export interface Video {
+    title : string,
+    image : string,
+    author : string,
+    tumb : string,
+    views : string,
+    timestamp : string
+}
+
+export const VIDEOS = [{
     title : "Another Love | Concert Edition",
-    image : "photo.png",
-    tumb : "thumb.png",
+    image : "/photo.png",
+    tumb : "/thumb.png",
     author : "Tom Moddy",
     views : "46 Million",
     timestamp : "12 days ago"
 },
 {
     title : "Satarangi | Animal Movie",
-    image : "photo.png",
-    tumb : "thumb.png",
+    image : "/photo.png",
+    tumb : "/thumb.png",
     author : "Arjit Singh",
     views : "46 Million",
     timestamp : "32 days ago"
 },
 {
     title : "Satarangi | Animal Movie",
-    image : "photo.png",
-    tumb : "thumb.png",
+    image : "/photo.png",
+    tumb : "/thumb.png",
     author : "Arjit Singh",
     views : "46 Million",
     timestamp : "32 days ago"
 },
 {
     title : "Satarangi | Animal Movie",
-    image : "photo.png",
-    tumb : "thumb.png",
+    image : "/photo.png",
+    tumb : "/thumb.png",
     author : "Arjit Singh",
     views : "46 Million",
     timestamp : "32 days ago"
 },
 {
     title : "Satarangi | Animal Movie",
-    image : "photo.png",
-    tumb : "thumb.png",
+    image : "/photo.png",
+    tumb : "/thumb.png",
     author : "Arjit Singh",
     views : "46 Million",
     timestamp : "32 days ago"
