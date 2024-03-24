@@ -7,7 +7,9 @@ export default function VideoPage(){
         <AppBar/>
         <div className="grid gap-4 grid-cols-12 pt-5">
             <div className="col-span-12 md:col-span-9 sm:col-span-8 ">
-                <video width={"100%"} height={"720px"} src="https://player.vimeo.com/progressive_redirect/playback/469190548/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=5f0dae6219555e265058b3993fdb18bf4df993e889cdb4c828215bd8f598fb50" />
+                <video width={"100%"} height={"720px"} controls>
+                    <source src="https://player.vimeo.com/progressive_redirect/playback/469190548/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=5f0dae6219555e265058b3993fdb18bf4df993e889cdb4c828215bd8f598fb50" type="video/mp4"/>
+                </video>
                 <div className="text-2xl">
                     Another Love | Tom Moddy
                 </div>
