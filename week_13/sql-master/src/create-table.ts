@@ -22,9 +22,7 @@ async function createTable() {
         );
     `;
 
-
     await client.query(createTodosQuery);
-
     console.log("Table created successfully!");
 }
 
